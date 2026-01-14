@@ -8,21 +8,18 @@ Collection of notebooks and Python scripts for the Natural Primal-Dual Hybrid Gr
 
 ---
 
-## Repository layout
+## Repository Layout
 
-Training Scripts
-
-- `Poisson/` Sec. 5.1--Poisson equation: NPDG, PINN, DeepRitz, and WAN solvers.
-- `Varcoeff/` Sec. 5.2--Variable-coefficient equation: NPDG, PINN, DeepRitz, and WAN solvers.
-- `Semi_linear/` Sec. 5.3--Semi-linear equation: NPDG, PINN, and WAN solvers.
-
-Notebooks
-
-- `RD/NPDG_for_AllenCahn1D.ipynb` Sec. 5.4--1D Reaction Diffusion (Allen-Cahn) equation.
-- `RD2D/NPDG_for_AllenCahn2D.ipynb` Sec. 5.4--2D Reaction Diffusion (Allen-Cahn) equation.
-- `OT1D/OT1D.ipynb` Sec. 5.5.1--1D Optimal Transport.
-- `OT_Gaussian/OTGaussian.ipynb` Sec. 5.5.2--Optimal Transport between Gaussian distributions.
-- `OTMixGaussian/NPDG_for_OT_Mixture_Gaussians.ipynb` Sec. 5.5.3--Optimal Transport from Gaussian to Gaussian mixtures.
+| Category | Path | Section | Description |
+|:--|:--|:--|:--|
+| Training Scripts | `Poisson/` | Sec. 5.1 | Poisson equation; NPDG, PINN, DeepRitz, and WAN solvers |
+| Training Scripts | `Varcoeff/` | Sec. 5.2 | Variable-coefficient equation; NPDG, PINN, DeepRitz, and WAN solvers |
+| Training Scripts | `Semi_linear/` | Sec. 5.3 | Semi-linear equation; NPDG, PINN, and WAN solvers |
+| Notebooks | `RD/NPDG_for_AllenCahn1D.ipynb` | Sec. 5.4 | 1D Reaction–Diffusion (Allen–Cahn) equation |
+| Notebooks | `RD2D/NPDG_for_AllenCahn2D.ipynb` | Sec. 5.4 | 2D Reaction–Diffusion (Allen–Cahn) equation |
+| Notebooks | `OT1D/OT1D.ipynb` | Sec. 5.5.1 | 1D Optimal Transport |
+| Notebooks | `OT_Gaussian/OTGaussian.ipynb` | Sec. 5.5.2 | Optimal Transport between Gaussian distributions |
+| Notebooks | `OTMixGaussian/NPDG_for_OT_Mixture_Gaussians.ipynb` | Sec. 5.5.3 | Optimal Transport from Gaussian to Gaussian mixtures |
 
 ---
 

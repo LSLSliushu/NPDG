@@ -4,7 +4,7 @@ Collection of notebooks and Python scripts for the Natural Primal-Dual Hybrid Gr
 
 > **A Natural Primal-Dual Hybrid Gradient Method for Adversarial Neural Network Training on Solving Partial Differential Equations**
 > *Shu Liu, Stanley Osher, Wuchen Li*  
-> *[arXiv:2411.06278](arxiv.org/abs/2411.06278)*
+> *[arXiv:2411.06278](https://arxiv.org/abs/2411.06278)*
 
 ---
 

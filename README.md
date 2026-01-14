@@ -21,7 +21,6 @@ Typical environment:
 - `torch`, `numpy`, `scipy`, `matplotlib`
 - `jupyter` for notebooks
 
-
 ## Quick start (scripts)
 
 GPU is optional; the scripts will use CUDA if available.
@@ -32,25 +31,3 @@ Example NPDG runs:
 python Semi_linear/run_npdhg.py
 python Poisson/run_npdhg.py
 python Varcoeff/run_npdhg.py
-```
-
-Baselines:
-
-```bash
-python Semi_linear/run_pinn.py
-python Semi_linear/run_wan.py
-python Poisson/run_deepritz.py
-python Poisson/run_pinn.py
-python Poisson/run_wan.py
-python Varcoeff/run_deepritz.py
-python Varcoeff/run_pinn.py
-python Varcoeff/run_wan.py
-```
-
-Outputs are written to subfolders such as `NPDHG_experiments/` or `wan_experiments/` under each problem directory.
-
-## Notebooks
-
-We recommend running the notebooks in Google Colab with GPU acceleration enabled.
-
-Open any of the `.ipynb` files under `RD/`, `RD2D/`, `OT1D/`, `OT_Gaussian/`, or `OTMixGaussian/` in Google Colab or Jupyter. Some notebooks include hard-coded Colab paths (e.g., `/content/...`); If you are not using Colab, please update those paths to your local checkout before running. Execute the cells sequentially to reproduce the results.

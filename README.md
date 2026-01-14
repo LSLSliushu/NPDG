@@ -7,6 +7,7 @@ Collection of notebooks and Python scripts for Natural Primal-Dual Hybrid Gradie
 - `Poisson/` (Sec. 5.1) Poisson equation example with training scripts implementing NPDG, PINN, DeepRitz, and WAN solvers.
 - `Varcoeff/` (Sec. 5.2) Variable-coefficient elliptic example with training scripts implementing NPDG, PINN, DeepRitz, and WAN solvers.
 - `Semi_linear/` (Sec. 5.3) Semi-linear equation example with training scripts implementing NPDG, PINN, and WAN solvers.
+
 - `RD/NPDG_for_AllenCahn1D.ipynb` (Sec. 5.4) 1D Reaction Diffusion (Allen-Cahn) equation notebook.
 - `RD2D/NPDG_for_AllenCahn2D.ipynb` (Sec. 5.4) 2D Reaction Diffusion (Allen-Cahn) equation notebook.
 - `OT1D/OT1D.ipynb` (Sec. 5.5.1) 1D optimal transport notebook.
@@ -21,13 +22,38 @@ Typical environment:
 - `torch`, `numpy`, `scipy`, `matplotlib`
 - `jupyter` for notebooks
 
-## Quick start (scripts)
+
+## Scripts
 
 GPU is optional; the scripts will use CUDA if available.
+You can modify the dimension of the problem in `config.py`, the parameters of the PDE in `pde.py`, and the hyperparameters of each tested algorithm in `run_[name_of_method].py`.
 
 Example NPDG runs:
 
 ```bash
-python Semi_linear/run_npdhg.py
 python Poisson/run_npdhg.py
 python Varcoeff/run_npdhg.py
+python Semi_linear/run_npdhg.py
+```
+
+Baselines:
+
+```bash
+python Poisson/run_deepritz.py
+python Poisson/run_pinn.py
+python Poisson/run_wan.py
+python Varcoeff/run_deepritz.py
+python Varcoeff/run_pinn.py
+python Varcoeff/run_wan.py
+python Semi_linear/run_pinn.py
+python Semi_linear/run_wan.py
+```
+
+Outputs are written to subfolders such as `NPDHG_experiments/` or `wan_experiments/` under each problem directory.
+
+## Notebooks
+
+We recommend running the notebooks in Google Colab with GPU acceleration enabled.
+You can modify the dimension of the problem and the hyperparameters of each tested algorithm in the corresponding cells of each notebook.
+
+Open any of the `.ipynb` files under `RD/`, `RD2D/`, `OT1D/`, `OT_Gaussian/`, or `OTMixGaussian/` in Google Colab or Jupyter. Some notebooks include hard-coded Colab paths (e.g., `/content/...`); If you are not using Colab, please update those paths to your local checkout before running. Execute the cells sequentially to reproduce the results.
